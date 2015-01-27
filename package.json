@@ -1,0 +1,29 @@
+{
+  "name": "Sandbox_MJS",
+  "version": "0.0.1",
+  "description": "Sandbox to experiment Marionette JS",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify js/index.js -o build/bundle.js",
+    "watch": "watchify js/index.js -o build/bundle.js --verbose"
+  },
+  "author": "Vinayak Patil",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "underscore": "~1.7.0",
+    "backbone": "~1.1.2",
+    "backbone.marionette": "~2.3.1"
+  },
+  "devDependencies": {
+    "browserify": "~8.1.1",
+    "browserify-shim": "~3.8.2"
+  },
+  "browser": {
+  },
+  "browserify": {
+    "transforms": ["browserify-shim"]
+  },
+  "browserify-shim": {
+  }
+}
